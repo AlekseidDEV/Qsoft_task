@@ -147,6 +147,7 @@ text-transform: uppercase;
     padding-bottom: 28px;
     border-radius: 5px;
     flex: 1 0 calc(287px - 30px);
+    cursor: pointer;
 }
 
 .input_search_mobile{
