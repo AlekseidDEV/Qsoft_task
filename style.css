@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(./fonts/Roboto-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(./fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+.header{
+box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.05);
+background: rgb(255, 255, 255);
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.container{
+    max-width: 1240px;
+    width: 100%;
+    margin: auto;
+}
+
+.logo_block{
+    max-width: 150px;
+    width: 100%;
+}
+
+.logo_link{
+    max-width: 140px;
+    height: 31px;
+    background: url(./img/логотип.svg) no-repeat center;
+    display: flex;
+    flex: 1 auto;
+}
+
+.content_header_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search_block{
+    max-width: 835px;
+    width: 100%;
+}
+
+.wrapper_cont_input{
+    position: relative;
+}
+
+.search_icon{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 24px;
+    height: 24px;
+    background: url(./img/Search24px.svg) no-repeat center;
+    transform: translate(0%, -50%);
+}
+
+.input_search_mobile,
+.input_search{
+    max-width: 835px;
+    width: 100%;
+    border: 1px solid rgb(235, 235, 241);
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    height: 40px;
+    padding-left: 39px;
+}
+
+.name_account{
+    color: rgb(118, 130, 152);
+font-family: "Roboto";
+font-size: 14px;
+font-weight: 400;
+line-height: 120%;
+letter-spacing: 1%;
+text-align: right;
+margin-right: 10px;
+}
+
+.user_icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    background: url(./img/Ellipse18.svg) no-repeat center;
+}
+
+.block_account{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.block_account::after{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: rgb(235, 235, 241);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    left: -19px;
+}
+
+.section_our_partners{
+    margin-top: 70px;
+}
+
+.title_section{
+    color: rgb(18, 25, 32);
+font-family: "Roboto";
+font-size: 36px;
+font-weight: 500;
+line-height: 160%;
+letter-spacing: 0%;
+text-align: left;
+text-transform: uppercase;
+}
+
+.block_cards_partners{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card_partners{
+    border: 1px solid rgb(235, 235, 241);
+    background: rgb(255, 255, 255);
+    max-width: 287.5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    border-radius: 5px;
+    flex: 1 0 calc(287px - 30px);
+}
+
+.input_search_mobile{
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.05);
+}
+
+.search_block_mobile{
+    display: none;
+}
+
+.card_partners:hover{
+    box-shadow: 0px 0px 10px 0px rgba(164, 164, 164, 0.03),-3px 0px 40px 0px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.img_card{
+    max-width: 100%;
+    height: auto;
+    min-width: 50px;
+}
+
+.user_icon_mobile{
+    width: 24px;
+    height: 24px;
+    background: url(./img/userMob.svg) no-repeat center;
+    display: flex;
+}
+
+.block_account_mobile{
+    display: none;
+}
+
+@media (max-width: 1280px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .search_block{
+        margin-left: 50px;
+        margin-right: 80px;
+    }
+}
+
+
+@media (max-width: 955px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .search_block{
+        margin-left: 50px;
+        margin-right: 80px;
+    }
+
+    .card_partners{
+        max-width: 220px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .block_cards_partners{
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .search_block{
+        margin-left: 20px;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 630px){
+    .search_block{
+        display: none;
+    }
+
+    .block_account{
+        display: none;
+    }
+
+    .block_account_mobile{
+        display: flex;
+    }
+
+    .search_block_mobile{
+        display: block;
+    }
+}
+
+@media (max-width: 500px){
+    .block_cards_partners{
+        justify-content: center;
+    }
+
+    .card_partners{
+        max-width: 335px;
+    }
+}
